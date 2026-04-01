@@ -11,12 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/master.css">
     <title>The History of Rockstar Lestat de Lioncourt</title>
+    <script src="/js/master.js" defer></script>
 </head>
 <body>
-    <div class ="wrapper">
     <h1>Lestat de Lioncourt's Musical History</h1>
     <p>An exploration of <b>Lestat de Lioncourt</b> and his music in AMC's "Interview with the Vampire."</p>
-    <p><q id= "quote">And music, that was where Lestat separated man from food. Music pierced his damn soul. <br>And any human who were involved in the creation of it existed on an elevated plane in his eyes.</q><br>- Louis de Pointe du Lac</p>
+    <p id="typewriter"></p>
+    <button onclick="typeWriter()">Reveal Quote</button>
+    <button onclick="toggleDarkmode()">Toggle Dark Mode</button>
     <nav>
         <ul>
             <li><a href="#backstory">Backstory</a></li>
@@ -65,24 +67,25 @@
     
     <h2>Section 5</h2>
     <h3>Lestat's Gallery and Recordings:</h3>
+    <button onclick="hideImage()">Toggle Visibility</button>
     <section id ="gallery">
-    <figure>
+    <figure class="imageGallery">
         <img src="static/lestat.jpg" alt="Lestat de Lioncourt in a harlequinn costume, performing on stage." width="560">
         <figcaption>Lestat de Lioncourt in a harlequinn costume, performing on stage.</figcaption>
     </figure>
-    <figure>
+    <figure class="imageGallery">
         <img src="static/lestat2.jpg" alt="Lestat de Lioncourt performing on the piano with Antoinette." width="560">
         <figcaption>Lestat de Lioncourt performing on the piano with Antoinette.</figcaption>
     </figure>
-    <figure>
+    <figure class="imageGallery">
         <img src="static/lestat3.png" alt="Lestat de Lioncourt instructing an opera singer." width="560">
         <figcaption>Lestat de Lioncourt instructing an opera singer.</figcaption>
     </figure>
-   <figure>
+   <figure class="imageGallery">
         <img src="static/lestat4.jpg" alt="Lestat de Lioncourt playing piano on a piece of wood." width="560">
         <figcaption>Lestat de Lioncourt at his old home in New Orleans, fake-playing piano on a piece of wood.</figcaption>
     </figure>
-    <figure>
+    <figure class="imageGallery">
         <img src="static/lestat5.jpg" alt="Lestat de Lioncourt performing a rock concert." width="560">
         <figcaption>Lestat de Lioncourt performing on stage, during his Rockstar era.</figcaption>
     </figure>
@@ -92,6 +95,5 @@
     <p>Footer Section</p>
     <p>2026. Written by Miles Charles for the CIM343 Midterm. All credit for content provided is given to AMC and Anne Rice, the author of the original book these characters and events are inspired by.</p>
 </footer>
-</div>
 </body>
 </html>

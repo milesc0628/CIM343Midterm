@@ -5,17 +5,22 @@ body{
     font-size: 20px;
     margin:0;
     padding:0;
-}
-.wrapper{
     background: url(/static/albumlogo.png), #966de6; 
     background-position: top right;
     background-size: 500px, cover;
     background-repeat: no-repeat;
     padding: 5% 10%;
+    color: #110c1b;
 }
-hr{
-    border-color: black;
+.dark-mode{
+  background: url(/static/albumlogowhite.png), #2f2248;
+  color: #d7cfe6;
+  background-position: top right;
+    background-size: 500px, cover;
+    background-repeat: no-repeat;
 }
+
+
 nav ul{
     list-style: none;
     display: grid;
@@ -25,14 +30,7 @@ nav ul{
     align-content: left;
     padding:0px;
 }
-a{
-    color: #0815b3;
-    text-decoration: none;
-}
-a:hover{
-    color:#0adeca;
-    text-decoration-line: underline;
-}
+
 nav ul li{
     padding: 2rem;
     border: solid 1px black;
@@ -40,14 +38,26 @@ nav ul li{
     text-align: center;
 }
 nav ul a{
-    color:#3e0aa5;
+    color:#2c0579;
 }
 nav ul li:hover{
-    background-color: #8150e5;
+    background-color: rgb(168, 131, 241);
 }
 nav ul a:hover{
      color:#8ff92b;
 }
+
+.dark-mode > nav ul a{
+    color:#d7cfe6;
+}
+.dark-mode > nav ul li:hover{
+    background-color: #5a408a;
+}
+
+.dark-mode > nav ul a:hover{
+     color:#8ff92b;
+}
+
 h1{
     font-family: "Rosarivo", serif;
     font-style: normal;
@@ -104,6 +114,18 @@ ol li .paragraph-text{
 #gallery figure{
     width:500px;
     height:300px;
+}
+
+button{
+    background: #c5b4e5;
+    padding: 25px;
+    font-family: "Rosarivo", serif;
+    font-weight:bold;
+    font-size: 15px;
+}
+
+#typewriter{
+    width: 1200px;
 }
 
 footer{
